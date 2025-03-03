@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Tudo em HTML e id em CSS e # (id e primordial que se use uma única vez, e sobrepõem, onde pode-se usar as duas ao mesmo tempo exemplo: <h1 id="princical" class="destaque") 
+Tudo em HTML e Class em CSS e . (class usa-se mais de uma vez iniciando com, pode-se usar duas classes exemplo: (<h2 class="basico destaque") .)*/
+
+
+
+body{
+    color: rgba(19, 20, 19, 0.964);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgba(78, 200, 78, 0.901);
+}
+
+.basico{
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(167, 17, 17);
+    font-weight: bold;
+    color: beige;
+}
+
+.intermediario{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgba(38, 84, 38, 0.953);;
+}
+
+h1#principal{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: green;
+    color: white;
+}
+
+p{
+    text-indent: 30px;
+}

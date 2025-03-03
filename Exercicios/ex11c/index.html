@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse síte em vários dispositivos diferentes ou símplesmente aumente e díminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture><!--a função picture faz com que crie varias source varias fontes de imagens diferentes, obedecendo a ordem maior para o menor-->
+    <h1>Reproduzindo Áudio</h1>
+    <!--<p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="midia/(Look Out) She's America - Otis McDonald.mp3" controls autoplay></audio><!--Mp3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop><!--função loop fica rodando a música automaticamente-->
+        <source src="midia/(Look Out) She's America - Otis McDonald.mp3" type="audio/mpeg">
+        <source src="midia/(Look Out) She's America - Otis McDonald.mp3" type="audio/ogg">
+        <source src="midia/(Look Out) She's America - Otis McDonald.mp3" type="audio/wav">
+    </audio><!--Essa outra opção de inserir audio fica a dica para navegadores com formatos diferentes lendo de cima para baixo buscando um leitor compátivel-->
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/(Look Out) She's America - Otis McDonald.mp3"> Clique aqui para baizar seu áudio.</a></p>
+    
+</body>
+</html>
