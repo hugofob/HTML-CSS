@@ -10,18 +10,21 @@
         }
         table{
             width: 300px;
+            height: 300px;
             border-collapse: collapse; /*  unindo as tabelas */
         }
-        tr.linha{
-            background-color: rgba(81, 81, 156, 0.526);
-        }
+        
         td{
             border: 1px solid black;
             padding: 5px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle;/* Alinhamento vertical */
         }
-        td.dado{
-            background-color: brown;
+
+        .numero{
+            text-align: right;
         }
+        
     </style>
 </head>
 <body>
@@ -37,7 +40,7 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -45,12 +48,12 @@
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr>
-            <td class="dado">A4</td>
+            <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td class="numero">C4</td>
         </tr>
 
     </table>
