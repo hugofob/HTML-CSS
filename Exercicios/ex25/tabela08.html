@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-weight: bold;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .cnome, .cprofissao{
+            background-color: blue;
+        }
+        .csexo, .cidade{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <colgroup> <!--colgroup fixa uma classe dentro da tabela, pode-se usar a tag span="2" expandir para mais de uma célula-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Hugo</td>
+            <td>Masculino</td>
+            <td>37</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Amanda</td>
+            <td>Feminino</td>
+            <td>29</td>
+            <td>Fisíoterapeuta</td>
+        </tr>
+        <tr>
+            <td>Roberta</td>
+            <td>Feminino</td>
+            <td>32</td>
+            <td>Secretária</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>Masculino</td>
+            <td>45</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Fábio</td>
+            <td>Masculino</td>
+            <td>35</td>
+            <td>Bancário</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Feminino</td>
+            <td>22</td>
+            <td>Atendente</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
