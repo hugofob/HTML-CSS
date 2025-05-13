@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+        form > p{
+            text-align: left;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>MEU PRIMEIRO FORMULÁRIO!</h1>
+    <br>
+    <form action="cadastro.php" autocomplete="off"> 
+        <!--A função autocomplete(off) faz com que não apareção as caixas de diálogos. o metodo method(GET) apresenta na url já o method(POST) não apresenta os dados na url-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Nome" id="isobrenome"></p>
+        <p><label for="iendereco">Endereço:</label> 
+            <input type="text" name="nome" id="iendereco"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
