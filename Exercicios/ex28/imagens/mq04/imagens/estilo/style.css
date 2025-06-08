@@ -7,16 +7,46 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
     box-sizing: border-box;
 }
 
-body, html{
+h1{
+    color: rgba(184, 147, 147, 0.808);
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+html{
     width: 100vw;
     height: 100vh;
 
 }
 
 body{
-    background-color: black url(../icon-phone.png) no-repeat;
+    background: black url(../back-phone.jpg) no-repeat;
+    text-align: center;
+    background-size: cover; /* Tela Cheia */
+    background-position: center center;
 }
+
+main{
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+img#Tv { display: none;}
+img#Desktop { display: none;}
+img#Celular { display: block;}
+img#Impressao { display: none;}
+img#Notebook { display: none;}
