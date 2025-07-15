@@ -15,19 +15,24 @@
             background-color: rgba(160, 132, 132, 0.805);
             border: 1px solid black;
             text-align: center;
-            flex-basis: 150px;
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex-basis: 250px;
+        }
+        div#ca{
+            flex: 1 1 250px;
+        }
+        div#cb{
+            flex: 0 1 250px;
+        }
+        div#cc{
+            flex: 2 1 250px;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Hugo</div>
-        <div class="item">Fernandes</div>
-        <div class="item">De</div>
-        <div class="item">Oliveira</div>
-        <div class="item">Barros</div>
+        <div class="item" id="ca">Hugo</div>
+        <div class="item" id="cb">Fernandes</div>
+        <div class="item" id="cc">Barros</div>
     </div>
 </body>
 </html>
