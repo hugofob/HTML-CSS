@@ -7,18 +7,20 @@
     <style>
         div.conteiner{
             border: 2px solid green;
-            height: 250px;
+           
             display: grid;
-            /*grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;*/
-            grid-template: repeat(3, auto) / repeat(3, auto);
+            grid-template-columns: 80px 80px 80px; /* Coluna */
+            grid-template-rows: 50px 50px 50px; /* Linha observação: usando medidas fr franções consegui-se dividiar as linhas*/
+            grid-auto-rows: 50px; /* Cria uma linha nova */
+            grid-auto-flow: column;
+            grid-auto-columns: 80px;
             gap: 5px;
             /*align-items: start;
             justify-items: center;*/
-            place-items: start center;
+            place-items: normal normal;
             /*align-content: space-between;
             justify-content: end;*/
-            place-content: space-between end;
+            place-content: normal normal;
 
         }
 
@@ -37,6 +39,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
