@@ -1,17 +1,24 @@
-.conteiner {
+.container {
     display: grid;
     grid-template-rows: repeat(3, 100px);
     grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }
 
 .caixa1 {
-    grid-row-start: 1;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    grid-row-start: 1; /* Usando a simplificação de grid-row: 1 / 2 usa-se de funções em uma única linha, podendo usar com termo grid-column: 1 / 5, temos também grid-area: 1 / 1 / 2 / 5 na ordem grid-row-start, grid-column-start, grid-row-end, grid-column-end */
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
 .caixa2 {
+    background-color: green;
+    color: white;
+    padding: 5px;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -19,6 +26,9 @@
 }
 
 .caixa3 {
+    background-color: blue;
+    color: white;
+    padding: 5px;
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 3;
