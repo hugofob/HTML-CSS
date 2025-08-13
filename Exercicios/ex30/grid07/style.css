@@ -1,0 +1,63 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px;
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    grid-row-start: 1; /* Usando a simplificação de grid-row: 1 / 2 usa-se de funções em uma única linha, podendo usar com termo grid-column: 1 / 5, temos também grid-area: 1 / 1 / 2 / 5 na ordem grid-row-start, grid-column-start, grid-row-end, grid-column-end */
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.caixa2 {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.caixa3 {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.caixa4{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.caixa5{
+    background-color: rgb(137, 137, 17);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
