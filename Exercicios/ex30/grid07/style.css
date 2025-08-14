@@ -1,3 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -7,57 +13,44 @@
     gap: 5px;
 }
 
-.caixa1 {
+#Topo {
     background-color: red;
     color: white;
     padding: 5px;
     text-align: center;
-    grid-row-start: 1; /* Usando a simplificação de grid-row: 1 / 2 usa-se de funções em uma única linha, podendo usar com termo grid-column: 1 / 5, temos também grid-area: 1 / 1 / 2 / 5 na ordem grid-row-start, grid-column-start, grid-row-end, grid-column-end */
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    /* Usando a simplificação de grid-row: 1 / 2 usa-se de funções em uma única linha, podendo usar com termo grid-column: 1 / 5, temos também grid-area: 1 / 1 / 2 / 5 na ordem grid-row-start, grid-column-start, grid-row-end, grid-column-end */
+    grid-area: 1 / 1 / 2 / -1;
+   
 }
 
-.caixa2 {
+#Menu {
     background-color: green;
     color: white;
     padding: 5px;
     text-align: center;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-area: 2 / 1 / 3 / -1;
 }
 
-.caixa3 {
+#Principal {
     background-color: blue;
     color: white;
     padding: 5px;
     text-align: center;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-area: 3 / 1 / -2 / 2;
 }
 
-.caixa4{
+#Secundario {
     background-color: black;
     color: white;
     padding: 5px;
     text-align: center;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-area: 3 / -2 / -2 / -1;
 }
 
-.caixa5{
+#Rodape {
     background-color: rgb(137, 137, 17);
     color: white;
     padding: 5px;
     text-align: center;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-area: -2 / 1 / -1 / -1;
 }
